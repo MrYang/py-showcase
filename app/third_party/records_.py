@@ -2,7 +2,7 @@ import records
 
 from loguru import logger
 
-db = records.Database('mysql+pymysql://root:123456@localhost/ct')
+db = records.Database('mysql+pymysql://root:123456@localhost/docker')
 
 
 def query():
@@ -11,4 +11,5 @@ def query():
 
 if __name__ == '__main__':
     rows = query()
-    logger.info(rows)
+    for row in rows:
+        logger.info(row)
