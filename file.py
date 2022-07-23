@@ -19,4 +19,4 @@ if __name__ == '__main__':
     lines = read(os.path.abspath(__file__))
     logger.info([line.strip() for line in lines])
 
-    csv_read('../asset/read.csv')
+    csv_read('asset/read.csv')
